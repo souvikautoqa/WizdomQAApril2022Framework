@@ -1,0 +1,37 @@
+{
+  "testdata":
+  [
+    {"testname":"verifyDestinationSearch",
+      "iteration" : [
+        {
+          "source":"Dublin",
+          "destination":"Paris"
+        },
+        {
+          "source":"Paris",
+          "destination":"Geneva"
+        },
+        {
+          "source":"Geneva",
+          "destination":"Dublin"
+        }
+      ]
+    },
+    {"testname":"verifyDestinationSearch2",
+      "iteration" : [
+        {
+          "source":"Dublin",
+          "destination":"Berlin",
+          "transport":"Flight",
+          "fare":"50"
+        },
+        {
+          "source":"Dublin",
+          "destination":"Berlin",
+          "transport":"Flight",
+          "fare":"50"
+        }
+      ]
+    }
+  ]
+}

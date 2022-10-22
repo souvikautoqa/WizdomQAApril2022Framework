@@ -1,0 +1,31 @@
+{
+  "testdata":
+  [
+    {"testname":"verifyDestinationSearch",
+      "iteration" : [
+        {
+          "source":"Dublin",
+          "destination":"Paris"
+        },
+        {
+          "source":"Paris",
+          "destination":"Geneva"
+        },
+        {
+          "source":"Geneva",
+          "destination":"Dublin"
+        }
+      ]
+    },
+    {"testname":"verifyBedPriceAtCheckout",
+      "iteration" : [
+        {
+          "destination":"Berlin"
+        },
+        {         
+          "destination":"Geneva"          
+        }
+      ]
+    }
+  ]
+}
