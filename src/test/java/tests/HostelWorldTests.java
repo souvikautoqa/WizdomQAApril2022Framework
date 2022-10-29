@@ -29,6 +29,18 @@ public class HostelWorldTests extends TestBase{
 		home.citySearch(data.get("destination"));
 		
 		propertyList = new HwPropertyListPage(driver());
+		
+		propertyDetail = new HwPropertyDetailPage(driver());
+		propertyDetail.chooseBed();	
+	}
+	
+	@Test(dataProvider="getJsonData")
+	public void verifyRoomNumberAtCheckout(Map<String,String> data) throws Exception {
+		home = new HwHomePage(driver());
+		Assert.assertEquals(home.launchApp(), true);
+		home.citySearch(data.get("destination"));
+		
+		propertyList = new HwPropertyListPage(driver());
 		propertyList.chooseFirstProperty();
 		
 		propertyDetail = new HwPropertyDetailPage(driver());
