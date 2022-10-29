@@ -46,6 +46,15 @@ public class HostelWorldTests extends TestBase{
 		propertyDetail = new HwPropertyDetailPage(driver());
 		propertyDetail.chooseBed();	
 	}
+	
+	@Test(dataProvider="getJsonData")
+	public void verifySomeMoreCheckoutTests(Map<String,String> data) throws Exception {
+		System.out.println("HI");
+		System.out.println("HI");
+		System.out.println("HI");
+		System.out.println("HI");
+		System.out.println("HI");
+	}
 
 	@Test(dataProvider="getJsonData")
 	public void verifyRoomTarrif(Map<String,String> data) throws Exception {
