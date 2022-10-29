@@ -47,4 +47,10 @@ public class HostelWorldTests extends TestBase{
 		propertyDetail.chooseBed();	
 	}
 
+	@Test(dataProvider="getJsonData")
+	public void verifyRoomTarrif(Map<String,String> data) throws Exception {
+			System.out.println("test");
+	}
+
+
 }
